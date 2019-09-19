@@ -18,7 +18,7 @@ public class ConsumerStart {
         while (true) {
             String hello = demoService.sayHello("world"); // 执行远程方法
             System.out.println(hello); // 显示调用结果
-            TimeUnit.MILLISECONDS.sleep(200);
+            TimeUnit.MILLISECONDS.sleep(100);
         }
 
 

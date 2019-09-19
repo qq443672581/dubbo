@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>dubbo-provider</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../world</module>
+    </modules>
 
     <properties>
         <dubbo.version>2.7.3</dubbo.version>
