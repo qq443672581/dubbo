@@ -12,7 +12,7 @@ public class Do {
 
     public static void main(String[] args) {
         try {
-            zooKeeper = new ZooKeeper("192.168.3.201", 5000, new Watcher() {
+            zooKeeper = new ZooKeeper("127.0.0.1", 5000, new Watcher() {
                 public void process(WatchedEvent watchedEvent) {
                     if (watchedEvent.getState() == Event.KeeperState.SyncConnected) {
                         latch.countDown();
